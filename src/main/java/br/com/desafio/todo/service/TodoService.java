@@ -28,7 +28,7 @@ public class TodoService {
         return t.findAll(sort);
     }
 
-    public List<Todo> update(@RequestBody Todo todo){
+    public List<Todo> update(Todo todo){
         t.save(todo);
         return list();
     }
